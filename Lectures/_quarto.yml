@@ -1,0 +1,29 @@
+project:
+  type: book
+
+book:
+  title: "Lectures"
+  author: "Prof. Dr. Markus Löcher"
+  date: "05/28/2023"
+  sidebar:
+    style: docked
+    background: light
+  chapters:
+    - index.qmd
+    - Lecture3.ipynb
+    - Lecture4.ipynb
+    - Lecture5.ipynb
+    - Lecture6.ipynb
+    - Lecture7.ipynb
+
+format:
+  html:
+    theme: cosmo
+    number-depth: 1
+    number-sections: false
+
+  pdf:
+    documentclass: scrreprt
+
+
+

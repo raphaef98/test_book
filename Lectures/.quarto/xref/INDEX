@@ -1,0 +1,29 @@
+{
+  "index.qmd": {
+    "index.html": "6b97f18b"
+  },
+  "intro.qmd": {
+    "intro.html": "f3a64207"
+  },
+  "Lecture3.ipynb": {
+    "Lecture3.html": "c40adca9"
+  },
+  "Lecture4.ipynb": {
+    "Lecture4.html": "ce852c32"
+  },
+  "Lecture5.ipynb": {
+    "Lecture5.html": "272c882b"
+  },
+  "summary.qmd": {
+    "summary.html": "b6f2fa52"
+  },
+  "references.qmd": {
+    "references.html": "600cf9e4"
+  },
+  "Lecture6.ipynb": {
+    "Lecture6.html": "c6bd28d2"
+  },
+  "Lecture7.ipynb": {
+    "Lecture7.html": "6fa960f2"
+  }
+}
