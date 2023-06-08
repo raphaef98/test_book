@@ -131,5 +131,12 @@
     "title": "Lecture 7",
     "section": "Linear Regression",
     "text": "Linear Regression\nWe can roughly estimate, i.e. “model” this relationship with a straight line:\n\\[\ny = \\beta_0 + \\beta_1 x\n\\]\n\nplt.figure(figsize=(5,3))\ntmp=sns.regplot(x=auto[\"weight\"], y=auto[\"mpg\"], order=4, ci=95, \n                scatter_kws={'color':'b', 's':9}, line_kws={'color':'r'})\n\n\n\n\nRemind yourself of the definition of the slope of a straight line\n\\[\n\\beta_1 = \\frac{\\Delta y}{\\Delta x} =  \\frac{y_2-y_1}{x_2-x_1}\n\\]\n\nest = smf.ols('mpg ~ weight', auto).fit()\nest.summary().tables[1]\n\n\n\n\n\ncoef\nstd err\nt\nP&gt;|t|\n[0.025\n0.975]\n\n\nIntercept\n46.2165\n0.799\n57.867\n0.000\n44.646\n47.787\n\n\nweight\n-0.0076\n0.000\n-29.645\n0.000\n-0.008\n-0.007\n\n\n\n\n\n\nnp.corrcoef(auto[\"weight\"], auto[\"mpg\"])\n\narray([[ 1.        , -0.83224421],\n       [-0.83224421,  1.        ]])\n\n\n\nnp.corrcoef(auto[[\"weight\",\"mpg\", \"horsepower\"]])\n\narray([[1.        , 0.99996983, 0.99998307, ..., 0.99996685, 0.99993843,\n        0.99993167],\n       [0.99996983, 1.        , 0.9999981 , ..., 0.99987343, 0.99982207,\n        0.9998107 ],\n       [0.99998307, 0.9999981 , 1.        , ..., 0.99990253, 0.99985692,\n        0.99984671],\n       ...,\n       [0.99996685, 0.99987343, 0.99990253, ..., 1.        , 0.99999564,\n        0.99999371],\n       [0.99993843, 0.99982207, 0.99985692, ..., 0.99999564, 1.        ,\n        0.99999982],\n       [0.99993167, 0.9998107 , 0.99984671, ..., 0.99999371, 0.99999982,\n        1.        ]])\n\n\n\nFurther Reading:"
+  },
+  {
+    "objectID": "Lab4.html",
+    "href": "Lab4.html",
+    "title": "Lab 4 Exercises",
+    "section": "",
+    "text": "More Simulations of Probabilistic Events\n\nimport numpy as np\nfrom numpy.random import default_rng\n\n\nSimulating Probabilistic Events\n\nBiased Coin: Simulate 365 days with a \\(p =\\frac{1}{4}\\) chance of being sunny (=1). Hint: exploit the fact that \\(p\\) is a fraction!\nBirthday problem Change the “birthday code” into a function with “n = number of people in a room” as an argument. (What other arguments might be useful?) Execute this function for \\(n=10, 25, 50\\).\nOverbooking flights: Imagine an airline sold \\(105\\) tickets on a flight with \\(100\\) seats. Assuming there is a \\(10\\%\\) no-show probability per passenger, “compute” (simulate) the probability that the airline will need to pay someone to not board."
   }
 ]
